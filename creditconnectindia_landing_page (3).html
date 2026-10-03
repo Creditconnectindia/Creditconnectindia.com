@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreditConnectIndia | India's Lowest Interest Rate Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cci-dark': '#07111E',
+                        'cci-navy': '#0A192F',
+                        'cci-blue-light': '#112240',
+                        'cci-gold': '#D4AF37',
+                        'cci-gold-hover': '#F3E5AB',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #07111E; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #D4AF37; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #b5952f; 
+        }
+
+        .input-field:focus {
+            outline: none;
+            border-color: #D4AF37;
+            box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.25);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased flex flex-col min-h-screen">
+
+    <nav class="bg-cci-navy text-white sticky top-0 z-50 shadow-xl border-b border-cci-gold/20 backdrop-blur-md bg-opacity-95">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <!-- Brand Logo / Name -->
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <div class="w-11 h-11 rounded-full border-2 border-cci-gold flex items-center justify-center text-cci-gold text-xl shadow-[0_0_12px_rgba(212,175,55,0.6)] bg-cci-dark">
+                        <i class="fa-solid fa-indian-rupee-sign"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-xl sm:text-2xl font-extrabold tracking-tight">CREDIT CONNECT <span class="text-cci-gold">INDIA</span></span>
+                        <span class="text-[10px] sm:text-xs text-gray-400 tracking-wider uppercase">Empowering Financial Networks</span>
+                    </div>
+                </div>
+
+                <!-- Desktop Nav Links -->
+                <div class="hidden md:flex space-x-7 items-center">
+                    <a href="#home" class="hover:text-cci-gold transition font-medium">Home</a>
+                    <a href="#lowest-rates" class="hover:text-cci-gold transition font-medium text-cci-gold font-semibold"><i class="fa-solid fa-percent mr-1"></i> Lowest Rate Guarantee</a>
+                    <a href="#loans" class="hover:text-cci-gold transition font-medium">Loan Products</a>
+                    <a href="#accounts" class="hover:text-cci-gold transition font-medium">Bank Accounts</a>
+                    <a href="tel:9987303740" class="bg-cci-gold text-cci-navy px-6 py-2.5 rounded-lg font-bold hover:bg-cci-gold-hover hover:shadow-[0_0_15px_rgba(212,175,55,0.4)] transition duration-300 flex items-center gap-2">
+                        <i class="fa-solid fa-phone"></i> 9987303740
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Toggle Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobileMenuBtn" class="text-cci-gold hover:text-white focus:outline-none p-2">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-cci-dark border-t border-cci-gold/20 px-4 pt-4 pb-6 space-y-3">
+            <a href="#home" class="block py-2 text-gray-200 hover:text-cci-gold font-medium">Home</a>
+            <a href="#lowest-rates" class="block py-2 text-cci-gold font-semibold">Lowest Rate Guarantee</a>
+            <a href="#loans" class="block py-2 text-gray-200 hover:text-cci-gold font-medium">Loan Products</a>
+            <a href="#accounts" class="block py-2 text-gray-200 hover:text-cci-gold font-medium">Bank Accounts</a>
+            <a href="tel:9987303740" class="block text-center mt-2 bg-cci-gold text-cci-navy py-3 rounded-lg font-bold">Call 9987303740</a>
+        </div>
+    </nav>
+
+    <header id="home" class="relative bg-gradient-to-br from-cci-dark via-cci-navy to-cci-blue-light text-white py-20 lg:py-32 overflow-hidden">
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full border border-cci-gold/20 opacity-30 pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full border-2 border-cci-gold/10 opacity-20 pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center max-w-4xl">
+            <div class="inline-flex items-center gap-2 bg-cci-gold/10 border border-cci-gold/30 rounded-full px-5 py-2 text-cci-gold text-sm font-bold mb-6 shadow-[0_0_15px_rgba(212,175,55,0.2)]">
+                <i class="fa-solid fa-bolt text-cci-gold"></i> INDIA'S #1 RATE-DISCOVERY & LENDING PLATFORM
+            </div>
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold mb-6 leading-tight tracking-tight">
+                Get India's <span class="text-cci-gold underline decoration-cci-gold/40 decoration-wavy">Lowest Interest Rates</span> Across All Credit Products!
+            </h1>
+            <p class="text-lg sm:text-xl text-gray-300 mb-10 leading-relaxed max-w-3xl mx-auto">
+                Connecting you directly with 25+ premier Indian Banks & NBFCs. We negotiate wholesale institutional rates to slash your interest burden and ensure fast, transparent financing.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 mb-12">
+                <a href="#enquiry" class="bg-cci-gold text-cci-navy font-extrabold py-4 px-8 rounded-xl text-lg hover:bg-cci-gold-hover hover:-translate-y-1 transition transform duration-300 shadow-[0_4px_25px_rgba(212,175,55,0.4)] flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-paper-plane"></i> Apply For Lowest Rate
+                </a>
+                <a href="#lowest-rates" class="bg-transparent border-2 border-cci-gold text-cci-gold font-bold py-4 px-8 rounded-xl text-lg hover:bg-cci-gold hover:text-cci-navy transition duration-300 flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-shield-halved"></i> Why Our Rates Are Lowest
+                </a>
+            </div>
+
+            <!-- Trust Bar / Stats -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-8 border-t border-cci-gold/20 max-w-4xl mx-auto text-left sm:text-center">
+                <div class="bg-cci-navy/50 p-4 rounded-xl border border-cci-gold/10">
+                    <div class="text-2xl sm:text-3xl font-extrabold text-cci-gold">8.35%*</div>
+                    <div class="text-xs text-gray-300">Home Loans From</div>
+                </div>
+                <div class="bg-cci-navy/50 p-4 rounded-xl border border-cci-gold/10">
+                    <div class="text-2xl sm:text-3xl font-extrabold text-cci-gold">10.49%*</div>
+                    <div class="text-xs text-gray-300">Personal Loans From</div>
+                </div>
+                <div class="bg-cci-navy/50 p-4 rounded-xl border border-cci-gold/10">
+                    <div class="text-2xl sm:text-3xl font-extrabold text-cci-gold">25+</div>
+                    <div class="text-xs text-gray-300">Partner Banks & NBFCs</div>
+                </div>
+                <div class="bg-cci-navy/50 p-4 rounded-xl border border-cci-gold/10">
+                    <div class="text-2xl sm:text-3xl font-extrabold text-cci-gold">₹500Cr+</div>
+                    <div class="text-xs text-gray-300">Loans Disbursed</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="lowest-rates" class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-cci-navy font-semibold tracking-wider uppercase text-sm mb-2 block">Unmatched Market Advantage</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-cci-navy mb-4">Why We Deliver The Absolute Lowest Interest Rates</h2>
+                <div class="w-24 h-1.5 bg-cci-gold mx-auto mb-4 rounded-full"></div>
+                <p class="text-gray-600 text-base sm:text-lg">We don't just compare rates—we leverage institutional buying power to slash your interest burden down to rock-bottom levels.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-200 hover:border-cci-gold transition duration-300 shadow-sm hover:shadow-xl group">
+                    <div class="w-14 h-14 bg-cci-navy rounded-2xl flex items-center justify-center text-cci-gold text-2xl mb-6 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-handshake-angle"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-cci-navy mb-3">Bulk Institutional Tie-Ups</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Because we route thousands of verified high-credit applicants every month, top-tier banks grant us exclusive wholesale pricing unavailable to retail walk-in customers.
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-200 hover:border-cci-gold transition duration-300 shadow-sm hover:shadow-xl group">
+                    <div class="w-14 h-14 bg-cci-navy rounded-2xl flex items-center justify-center text-cci-gold text-2xl mb-6 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-cci-navy mb-3">Algorithmic Rate Matching</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Our intelligent matching engine instantly scans live rate sheets across 25+ lenders to pin-point the exact institution currently offering promotional lowest rates for your profile.
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-200 hover:border-cci-gold transition duration-300 shadow-sm hover:shadow-xl group">
+                    <div class="w-14 h-14 bg-cci-navy rounded-2xl flex items-center justify-center text-cci-gold text-2xl mb-6 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-shield-check"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-cci-navy mb-3">Zero Brokerage & No Hidden Fees</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        We maintain 100% transparent pricing with zero surprise processing fees, upfront commission traps, or hidden clauses. What you see is what you get.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Guarantee Banner -->
+            <div class="bg-gradient-to-r from-cci-navy to-cci-blue-light text-white rounded-3xl p-8 sm:p-12 shadow-2xl border-2 border-cci-gold flex flex-col lg:flex-row items-center justify-between gap-8">
+                <div class="space-y-4 text-center lg:text-left">
+                    <div class="inline-block bg-cci-gold text-cci-navy text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Lowest Rate Guarantee</div>
+                    <h3 class="text-2xl sm:text-3xl font-extrabold">Found a lower rate elsewhere? We will beat it!</h3>
+                    <p class="text-gray-300 text-sm sm:text-base max-w-xl">
+                        Our expert credit advisory board guarantees the most cost-effective financing solution across India. Let us review your quote today.
+                    </p>
+                </div>
+                <div class="flex-shrink-0">
+                    <a href="#enquiry" class="bg-cci-gold text-cci-navy font-extrabold px-8 py-4 rounded-xl text-base hover:bg-cci-gold-hover transition duration-300 shadow-lg inline-flex items-center gap-3">
+                        <i class="fa-solid fa-award text-xl"></i> Claim Lowest Rate Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="loans" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-cci-navy font-semibold tracking-wider uppercase text-sm mb-2 block">All-India Financing Solutions</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-cci-navy mb-4">Comprehensive Loan Products at Lowest Rates</h2>
+                <div class="w-24 h-1.5 bg-cci-gold mx-auto mb-4 rounded-full"></div>
+                <p class="text-gray-600 text-base sm:text-lg">Whether you are an individual planning a dream home or an enterprise scaling operations, we have the lowest interest loan ready for you.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Card 1: Personal Loan -->
+                <div class="bg-white rounded-2xl p-6 border border-gray-200 hover:border-cci-gold hover:shadow-2xl transition duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 bg-cci-navy rounded-xl flex items-center justify-center text-cci-gold text-xl mb-5 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-user-tie"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-cci-navy mb-2">Personal Loan</h3>
+                        <p class="text-gray-600 text-sm mb-4">Instant collateral-free funds for medical emergencies, travel, or weddings with quick disbursals.</p>
+                    </div>
+                    <div>
+                        <div class="text-xs font-semibold text-cci-navy bg-cci-gold/15 py-1.5 px-3 rounded-md mb-4 inline-block">Lowest Rate: From 10.49% p.a.</div>
+                        <a href="#enquiry" onclick="selectLoan('Personal Loan')" class="block w-full text-center bg-cci-navy text-white py-2.5 rounded-lg font-semibold hover:bg-cci-gold hover:text-cci-navy transition duration-300">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 2: Business Loan -->
+                <div class="bg-white rounded-2xl p-6 border border-gray-200 hover:border-cci-gold hover:shadow-2xl transition duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 bg-cci-navy rounded-xl flex items-center justify-center text-cci-gold text-xl mb-5 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-cci-navy mb-2">Business Loan</h3>
+                        <p class="text-gray-600 text-sm mb-4">Scale your enterprise, buy inventory, or manage working capital with tailored business credit.</p>
+                    </div>
+                    <div>
+                        <div class="text-xs font-semibold text-cci-navy bg-cci-gold/15 py-1.5 px-3 rounded-md mb-4 inline-block">Lowest Rate: From 11.00% p.a.</div>
+                        <a href="#enquiry" onclick="selectLoan('Business Loan')" class="block w-full text-center bg-cci-navy text-white py-2.5 rounded-lg font-semibold hover:bg-cci-gold hover:text-cci-navy transition duration-300">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 3: Home Loan -->
+                <div class="bg-white rounded-2xl p-6 border border-gray-200 hover:border-cci-gold hover:shadow-2xl transition duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 bg-cci-navy rounded-xl flex items-center justify-center text-cci-gold text-xl mb-5 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-cci-navy mb-2">Home Loan & Balance Transfer</h3>
+                        <p class="text-gray-600 text-sm mb-4">Turn your dream home into reality or transfer your existing expensive mortgage to save huge EMIs.</p>
+                    </div>
+                    <div>
+                        <div class="text-xs font-semibold text-cci-navy bg-cci-gold/15 py-1.5 px-3 rounded-md mb-4 inline-block">Lowest Rate: From 8.35% p.a.</div>
+                        <a href="#enquiry" onclick="selectLoan('Home Loan')" class="block w-full text-center bg-cci-navy text-white py-2.5 rounded-lg font-semibold hover:bg-cci-gold hover:text-cci-navy transition duration-300">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 4: Car Loan -->
+                <div class="bg-white rounded-2xl p-6 border border-gray-200 hover:border-cci-gold hover:shadow-2xl transition duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 bg-cci-navy rounded-xl flex items-center justify-center text-cci-gold text-xl mb-5 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-car"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-cci-navy mb-2">Car / Auto Loan</h3>
+                        <p class="text-gray-600 text-sm mb-4">Drive home your favorite vehicle with up to 100% on-road financing and flexible repayment terms.</p>
+                    </div>
+                    <div>
+                        <div class="text-xs font-semibold text-cci-navy bg-cci-gold/15 py-1.5 px-3 rounded-md mb-4 inline-block">Lowest Rate: From 8.50% p.a.</div>
+                        <a href="#enquiry" onclick="selectLoan('Car Loan')" class="block w-full text-center bg-cci-navy text-white py-2.5 rounded-lg font-semibold hover:bg-cci-gold hover:text-cci-navy transition duration-300">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 5: Education Loan -->
+                <div class="bg-white rounded-2xl p-6 border border-gray-200 hover:border-cci-gold hover:shadow-2xl transition duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 bg-cci-navy rounded-xl flex items-center justify-center text-cci-gold text-xl mb-5 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-cci-navy mb-2">Education Loan</h3>
+                        <p class="text-gray-600 text-sm mb-4">Fund higher studies in India or abroad with moratorium periods and tax benefits under Section 80E.</p>
+                    </div>
+                    <div>
+                        <div class="text-xs font-semibold text-cci-navy bg-cci-gold/15 py-1.5 px-3 rounded-md mb-4 inline-block">Lowest Rate: From 9.00% p.a.</div>
+                        <a href="#enquiry" onclick="selectLoan('Education Loan')" class="block w-full text-center bg-cci-navy text-white py-2.5 rounded-lg font-semibold hover:bg-cci-gold hover:text-cci-navy transition duration-300">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 6: Gold Loan -->
+                <div class="bg-white rounded-2xl p-6 border border-gray-200 hover:border-cci-gold hover:shadow-2xl transition duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 bg-cci-navy rounded-xl flex items-center justify-center text-cci-gold text-xl mb-5 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-coins"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-cci-navy mb-2">Gold Loan</h3>
+                        <p class="text-gray-600 text-sm mb-4">Unlock immediate liquidity from your gold ornaments with maximum per-gram value and minimal paperwork.</p>
+                    </div>
+                    <div>
+                        <div class="text-xs font-semibold text-cci-navy bg-cci-gold/15 py-1.5 px-3 rounded-md mb-4 inline-block">Lowest Rate: From 8.75% p.a.</div>
+                        <a href="#enquiry" onclick="selectLoan('Gold Loan')" class="block w-full text-center bg-cci-navy text-white py-2.5 rounded-lg font-semibold hover:bg-cci-gold hover:text-cci-navy transition duration-300">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 7: Loan Against Property -->
+                <div class="bg-white rounded-2xl p-6 border border-gray-200 hover:border-cci-gold hover:shadow-2xl transition duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 bg-cci-navy rounded-xl flex items-center justify-center text-cci-gold text-xl mb-5 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-building-shield"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-cci-navy mb-2">Loan Against Property (LAP)</h3>
+                        <p class="text-gray-600 text-sm mb-4">Leverage your commercial or residential real estate to secure high-value loans at low interest.</p>
+                    </div>
+                    <div>
+                        <div class="text-xs font-semibold text-cci-navy bg-cci-gold/15 py-1.5 px-3 rounded-md mb-4 inline-block">Lowest Rate: From 9.25% p.a.</div>
+                        <a href="#enquiry" onclick="selectLoan('Loan Against Property')" class="block w-full text-center bg-cci-navy text-white py-2.5 rounded-lg font-semibold hover:bg-cci-gold hover:text-cci-navy transition duration-300">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 8: Professional Loans -->
+                <div class="bg-white rounded-2xl p-6 border border-gray-200 hover:border-cci-gold hover:shadow-2xl transition duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 bg-cci-navy rounded-xl flex items-center justify-center text-cci-gold text-xl mb-5 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-stethoscope"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-cci-navy mb-2">Professional Loans (Doctors / CAs)</h3>
+                        <p class="text-gray-600 text-sm mb-4">Specialized unsecured credit schemes for doctors, chartered accountants, and engineers.</p>
+                    </div>
+                    <div>
+                        <div class="text-xs font-semibold text-cci-navy bg-cci-gold/15 py-1.5 px-3 rounded-md mb-4 inline-block">Lowest Rate: From 9.50% p.a.</div>
+                        <a href="#enquiry" onclick="selectLoan('Professional Loan')" class="block w-full text-center bg-cci-navy text-white py-2.5 rounded-lg font-semibold hover:bg-cci-gold hover:text-cci-navy transition duration-300">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="accounts" class="py-24 bg-cci-navy text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <!-- Left Details -->
+                <div class="lg:w-1/2">
+                    <span class="text-cci-gold font-semibold tracking-wider uppercase text-sm mb-2 block">Partner Bank Onboarding</span>
+                    <h2 class="text-3xl sm:text-5xl font-extrabold mb-6 leading-tight">Open High-Yield Savings & Corporate Current Accounts</h2>
+                    <p class="text-gray-300 text-base sm:text-lg mb-8 leading-relaxed">
+                        Partnering with premier scheduled commercial banks in India, CreditConnectIndia makes opening high-interest savings accounts and zero-friction corporate current accounts completely digital and hassle-free.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                        <div class="bg-cci-blue-light p-4 rounded-xl border border-cci-gold/20">
+                            <div class="text-cci-gold text-xl mb-2"><i class="fa-solid fa-piggy-bank"></i></div>
+                            <h4 class="font-bold text-white mb-1">High-Interest Savings</h4>
+                            <p class="text-xs text-gray-300">Earn up to 7% p.a. interest with zero maintenance fee options available.</p>
+                        </div>
+                        <div class="bg-cci-blue-light p-4 rounded-xl border border-cci-gold/20">
+                            <div class="text-cci-gold text-xl mb-2"><i class="fa-solid fa-building"></i></div>
+                            <h4 class="font-bold text-white mb-1">Corporate Current Accounts</h4>
+                            <p class="text-xs text-gray-300">Unlimited free cash deposits and instant payment gateway integration for businesses.</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-gray-200"><i class="fa-solid fa-check text-cci-gold mr-3"></i> 100% Video KYC & Instant Account Number Generation</li>
+                        <li class="flex items-center text-gray-200"><i class="fa-solid fa-check text-cci-gold mr-3"></i> Free Platinum Debit Card & Personalized Cheque Book</li>
+                        <li class="flex items-center text-gray-200"><i class="fa-solid fa-check text-cci-gold mr-3"></i> Dedicated Personal Relationship Manager</li>
+                    </ul>
+                </div>
+
+                <!-- Right Form Box -->
+                <div class="lg:w-1/2 w-full">
+                    <div class="bg-white text-gray-800 rounded-3xl p-8 sm:p-10 shadow-2xl relative border-t-4 border-cci-gold">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-cci-gold/10 rounded-bl-full pointer-events-none"></div>
+                        <h3 class="text-2xl font-bold text-cci-navy mb-2">Request Account Assistance</h3>
+                        <p class="text-sm text-gray-600 mb-6">Enter your details and our banking expert will assist you in opening the ideal account.</p>
+                        
+                        <form id="accountForm" onsubmit="handleAccountSubmit(event)" class="space-y-4">
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold text-cci-navy uppercase mb-1">First Name</label>
+                                    <input type="text" required class="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-xl input-field text-sm" placeholder="Rahul">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-cci-navy uppercase mb-1">Last Name</label>
+                                    <input type="text" required class="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-xl input-field text-sm" placeholder="Sharma">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-cci-navy uppercase mb-1">Mobile Number</label>
+                                <div class="flex">
+                                    <span class="inline-flex items-center px-4 rounded-l-xl border border-r-0 border-gray-300 bg-gray-100 text-gray-600 text-sm font-semibold">+91</span>
+                                    <input type="tel" required pattern="[0-9]{10}" class="flex-1 w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-r-xl input-field text-sm" placeholder="9987303740">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-cci-navy uppercase mb-1">Preferred Account Type</label>
+                                <div class="grid grid-cols-2 gap-4 mt-2">
+                                    <label class="flex items-center p-3 bg-gray-50 border border-gray-200 rounded-xl cursor-pointer hover:border-cci-gold">
+                                        <input type="radio" name="accType" value="Savings Account" checked class="text-cci-gold focus:ring-cci-gold">
+                                        <span class="ml-2 text-xs sm:text-sm font-medium text-gray-700">Savings</span>
+                                    </label>
+                                    <label class="flex items-center p-3 bg-gray-50 border border-gray-200 rounded-xl cursor-pointer hover:border-cci-gold">
+                                        <input type="radio" name="accType" value="Current Account" class="text-cci-gold focus:ring-cci-gold">
+                                        <span class="ml-2 text-xs sm:text-sm font-medium text-gray-700">Current</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <button type="submit" class="w-full mt-2 bg-cci-navy text-white font-bold py-3.5 rounded-xl hover:bg-cci-gold hover:text-cci-navy transition duration-300 shadow-md">
+                                Request Account Callback
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="enquiry" class="py-24 bg-white flex-grow">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-cci-navy font-semibold tracking-wider uppercase text-sm mb-2 block">Guaranteed Lowest Rates Portal</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-cci-navy mb-4">Loan Enquiry & Custom Customer Request</h2>
+                <div class="w-24 h-1.5 bg-cci-gold mx-auto mb-4 rounded-full"></div>
+                <p class="text-gray-600 text-base sm:text-lg">Select your loan type, required amount, and provide your specific custom requirements. Our financial advisory team will negotiate the lowest market rate for you.</p>
+            </div>
+
+            <div class="bg-gray-50 rounded-3xl shadow-2xl p-8 sm:p-12 border-t-4 border-cci-gold border border-gray-200">
+                <form id="loanForm" onsubmit="handleLoanSubmit(event)" class="space-y-6">
+                    
+                    <!-- Dropdown for All Indian Loan Types & Accounts -->
+                    <div>
+                        <label for="loanProductSelect" class="block text-sm font-bold text-cci-navy mb-2">
+                            Select Loan Product / Bank Account <span class="text-red-500">*</span>
+                        </label>
+                        <div class="relative">
+                            <select id="loanProductSelect" required class="appearance-none w-full px-5 py-4 bg-white border border-gray-300 rounded-xl input-field text-gray-700 font-medium cursor-pointer">
+                                <option value="" disabled selected>-- Choose from all available financial products in India --</option>
+                                <option value="Personal Loan">Personal Loan (Lowest rates from 10.49%)</option>
+                                <option value="Business Loan">Business Loan (Lowest rates from 11.00%)</option>
+                                <option value="Home Loan & Balance Transfer">Home Loan & Balance Transfer (Lowest rates from 8.35%)</option>
+                                <option value="Car / Auto Loan">Car / Auto Loan (Lowest rates from 8.50%)</option>
+                                <option value="Education Loan">Education Loan (Lowest rates from 9.00%)</option>
+                                <option value="Gold Loan">Gold Loan (Lowest rates from 8.75%)</option>
+                                <option value="Loan Against Property">Loan Against Property (LAP - Lowest rates from 9.25%)</option>
+                                <option value="Professional Loan">Professional Loan for Doctors/CAs (Lowest rates from 9.50%)</option>
+                                <option value="Savings Account Opening">Savings Account Opening (High Yield & Zero Balance)</option>
+                                <option value="Current Account Opening">Current Account Opening (Corporate & SME)</option>
+                            </select>
+                            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-gray-500">
+                                <i class="fa-solid fa-chevron-down text-sm"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Loan Amount & City -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label for="loanAmountInput" class="block text-sm font-bold text-cci-navy mb-2">
+                                Required Loan Amount / Deposit (₹) <span class="text-red-500">*</span>
+                            </label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-gray-400 font-bold">₹</div>
+                                <input type="number" id="loanAmountInput" required min="10000" step="10000" class="w-full pl-10 pr-4 py-4 bg-white border border-gray-300 rounded-xl input-field text-gray-700 font-semibold" placeholder="e.g., 500000">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="cityInput" class="block text-sm font-bold text-cci-navy mb-2">
+                                Your City <span class="text-red-500">*</span>
+                            </label>
+                            <input type="text" id="cityInput" required class="w-full px-4 py-4 bg-white border border-gray-300 rounded-xl input-field text-gray-700" placeholder="e.g., Mumbai, Delhi, Bangalore">
+                        </div>
+                    </div>
+
+                    <!-- Customer Details -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                        <div>
+                            <label for="fullNameInput" class="block text-sm font-bold text-cci-navy mb-2">Full Name <span class="text-red-500">*</span></label>
+                            <input type="text" id="fullNameInput" required class="w-full px-4 py-4 bg-white border border-gray-300 rounded-xl input-field text-gray-700" placeholder="Rahul Sharma">
+                        </div>
+                        <div>
+                            <label for="emailInput" class="block text-sm font-bold text-cci-navy mb-2">Email Address <span class="text-red-500">*</span></label>
+                            <input type="email" id="emailInput" required class="w-full px-4 py-4 bg-white border border-gray-300 rounded-xl input-field text-gray-700" placeholder="rahul@example.com">
+                        </div>
+                        <div>
+                            <label for="phoneInput" class="block text-sm font-bold text-cci-navy mb-2">Mobile Number <span class="text-red-500">*</span></label>
+                            <div class="flex">
+                                <span class="inline-flex items-center px-4 rounded-l-xl border border-r-0 border-gray-300 bg-gray-100 text-gray-600 text-sm font-semibold">+91</span>
+                                <input type="tel" id="phoneInput" required pattern="[0-9]{10}" class="flex-1 w-full px-4 py-4 bg-white border border-gray-300 rounded-r-xl input-field text-gray-700" placeholder="9987303740">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Editable Field for Customer's Custom Request -->
+                    <div>
+                        <label for="customRequestInput" class="block text-sm font-bold text-cci-navy mb-2">
+                            Customer's Custom Request / Specific Requirements <span class="text-gray-400 text-xs font-normal">(Editable)</span>
+                        </label>
+                        <textarea id="customRequestInput" rows="4" class="w-full px-4 py-4 bg-white border border-gray-300 rounded-xl input-field text-gray-700 resize-y" placeholder="Describe any specific expectations regarding lowest interest rates, preferred bank partner, tenure, monthly income details, or existing loan balance transfer queries..."></textarea>
+                    </div>
+
+                    <!-- Consent checkbox -->
+                    <div class="flex items-start">
+                        <div class="flex items-center h-5">
+                            <input id="termsCheck" type="checkbox" required class="w-4 h-4 border border-gray-300 rounded bg-white focus:ring-3 focus:ring-cci-gold text-cci-gold cursor-pointer">
+                        </div>
+                        <div class="ml-3 text-xs sm:text-sm">
+                            <label for="termsCheck" class="text-gray-600">I authorize CreditConnectIndia and our lowest-rate advisory board to contact me via Call, WhatsApp, or Email regarding lowest rate options. I agree to the privacy terms.</label>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="w-full bg-cci-gold text-cci-navy font-extrabold text-lg py-4 rounded-xl hover:bg-cci-gold-hover hover:shadow-xl transition duration-300 flex justify-center items-center gap-2">
+                        Submit Loan Enquiry & Claim Lowest Rate <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-cci-dark text-gray-400 py-16 border-t border-cci-gold/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+                <!-- Col 1: Brand -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-full border-2 border-cci-gold flex items-center justify-center text-cci-gold text-lg bg-cci-navy">
+                            <i class="fa-solid fa-indian-rupee-sign"></i>
+                        </div>
+                        <span class="text-2xl font-extrabold text-white tracking-tight">CREDIT CONNECT <span class="text-cci-gold">INDIA</span></span>
+                    </div>
+                    <p class="text-sm text-gray-300 mb-6 max-w-sm leading-relaxed">
+                        Empowering financial networks across India with the absolute lowest interest rates through institutional bulk partnerships and algorithmic matching.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://instagram.com/CreditConnectIndia" target="_blank" class="w-10 h-10 rounded-full bg-cci-navy border border-cci-gold/30 flex items-center justify-center text-cci-gold hover:bg-cci-gold hover:text-cci-navy transition">
+                            <i class="fa-brands fa-instagram text-lg"></i>
+                        </a>
+                        <a href="tel:9987303740" class="w-10 h-10 rounded-full bg-cci-navy border border-cci-gold/30 flex items-center justify-center text-cci-gold hover:bg-cci-gold hover:text-cci-navy transition">
+                            <i class="fa-solid fa-phone text-base"></i>
+                        </a>
+                        <a href="https://creditconnectindia.com" class="w-10 h-10 rounded-full bg-cci-navy border border-cci-gold/30 flex items-center justify-center text-cci-gold hover:bg-cci-gold hover:text-cci-navy transition">
+                            <i class="fa-solid fa-globe text-base"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div>
+                    <h4 class="text-white font-bold mb-4 tracking-wide uppercase text-sm">Quick Links</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="#home" class="hover:text-cci-gold transition">Home</a></li>
+                        <li><a href="#lowest-rates" class="hover:text-cci-gold transition">Lowest Rate Guarantee</a></li>
+                        <li><a href="#loans" class="hover:text-cci-gold transition">Loan Products</a></li>
+                        <li><a href="#accounts" class="hover:text-cci-gold transition">Bank Accounts</a></li>
+                        <li><a href="#enquiry" class="hover:text-cci-gold transition">Loan Enquiry Form</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Official Contact Details -->
+                <div>
+                    <h4 class="text-white font-bold mb-4 tracking-wide uppercase text-sm">Official Contact</h4>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-phone text-cci-gold mr-3"></i>
+                            <a href="tel:9987303740" class="hover:text-cci-gold transition font-medium">9987303740</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-brands fa-instagram text-cci-gold mr-3"></i>
+                            <a href="https://instagram.com/CreditConnectIndia" target="_blank" class="hover:text-cci-gold transition font-medium">@CreditConnectIndia</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-globe text-cci-gold mr-3"></i>
+                            <span class="text-white font-medium">CreditConnectIndia.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-xs text-center text-gray-500">
+                <p>&copy; 2026 CreditConnectIndia.com. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="notificationModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-60 hidden opacity-0 transition-opacity duration-300">
+        <div class="bg-white rounded-3xl shadow-2xl p-8 max-w-md w-full mx-4 transform scale-95 transition-transform duration-300 text-center border-t-4 border-cci-gold">
+            <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4 text-cci-gold">
+                <i class="fa-solid fa-award text-3xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-cci-navy mb-2">Enquiry Registered Successfully!</h3>
+            <p id="modalMessageText" class="text-gray-600 text-sm mb-6 leading-relaxed">Thank you. Our lowest-rate advisory team will contact you shortly.</p>
+            <button onclick="closeModal()" class="w-full bg-cci-navy text-white font-bold py-3 rounded-xl hover:bg-cci-gold hover:text-cci-navy transition duration-300">
+                Got It
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Quick select loan from product card
+        function selectLoan(loanName) {
+            const selectEl = document.getElementById('loanProductSelect');
+            for(let i=0; i<selectEl.options.length; i++) {
+                if(selectEl.options[i].value.includes(loanName)) {
+                    selectEl.selectedIndex = i;
+                    break;
+                }
+            }
+            // Scroll to enquiry form
+            document.getElementById('enquiry').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Handle Loan Enquiry Form Submission
+        function handleLoanSubmit(event) {
+            event.preventDefault();
+            const loanType = document.getElementById('loanProductSelect').value;
+            const amount = document.getElementById('loanAmountInput').value;
+            const name = document.getElementById('fullNameInput').value;
+            const city = document.getElementById('cityInput').value;
+            
+            const message = `Thank you ${name} from ${city}! Your lowest-rate enquiry for ${loanType} amounting to ₹${Number(amount).toLocaleString('en-IN')} has been registered. Our team will connect with you shortly with the best bank offers.`;
+            
+            showModal(message);
+            event.target.reset();
+        }
+
+        // Handle Bank Account Form Submission
+        function handleAccountSubmit(event) {
+            event.preventDefault();
+            const message = `Your request to open a bank account has been successfully submitted! Our representative will call you shortly.`;
+            showModal(message);
+            event.target.reset();
+        }
+
+        // Modal Controls
+        function showModal(msg) {
+            const modal = document.getElementById('notificationModal');
+            const msgEl = document.getElementById('modalMessageText');
+            msgEl.textContent = msg;
+            
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                modal.querySelector('div').classList.remove('scale-95');
+                modal.querySelector('div').classList.add('scale-100');
+            }, 10);
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('notificationModal');
+            modal.classList.add('opacity-0');
+            modal.querySelector('div').classList.remove('scale-100');
+            modal.querySelector('div').classList.add('scale-95');
+            
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 300);
+        }
+    </script>
+</body>
+</html>
